@@ -1,0 +1,23 @@
+type Query
+{
+    allCourses: [Course]
+    course(courseId: String): Course
+}
+
+type Course
+{
+    courseId: Integer
+    slug: String
+    title: String
+    price: Integer
+    release_date: Date
+    instructor: Instructor
+}
+
+type Instructor
+{
+    courseId: Integer
+    name: String
+    gender: String
+    city: String
+}

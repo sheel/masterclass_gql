@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "bf264c78-35ee-4ccf-8930-0ae4cb8360cc",
+		"name": "GQLApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "276b4833-aade-4963-9c3b-4cb25ae65861",
+			"name": "localhost:3000/graphql/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\tallCourses\n\t{\n    \tcourseId\n    \tslug\n    \ttitle\n\t}\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/graphql/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "567fde31-33c3-41a4-8e43-0062f811c869",
+			"name": "localhost:3000/graphql/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\tcourse(slug:\"VScMwWlKoAJPwbbCrWcDDtucgtnjtsxVusdxIlafgQs\")\n\t{\n    \tslug\n    \ttitle\n    \tinstructor\n\t}\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/graphql/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"_postman_id": "0a143637-f10c-432a-adc7-f87a507b87b0",
+			"name": "localhost:3000/graphql/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\tcourse(id:10)\n\t{\n    \tslug\n    \ttitle\n\t}\n}\n"
+				},
+				"url": {
+					"raw": "localhost:3000/graphql/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
